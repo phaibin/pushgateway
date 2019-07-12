@@ -3,7 +3,7 @@ go:
     # .circle/config.yml should also be updated.
     version: 1.12
 repository:
-    path: github.com/prometheus/pushgateway
+    path: github.com/phaibin/pushgateway
 build:
     flags: -mod=vendor -a -tags netgo
     ldflags: |

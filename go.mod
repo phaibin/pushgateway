@@ -1,4 +1,4 @@
-module github.com/prometheus/pushgateway
+module github.com/phaibin/pushgateway
 
 require (
 	github.com/go-kit/kit v0.8.0

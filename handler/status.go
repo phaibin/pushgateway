@@ -29,7 +29,7 @@ import (
 	"gopkg.in/alecthomas/kingpin.v2"
 
 	"github.com/prometheus/common/version"
-	"github.com/prometheus/pushgateway/storage"
+	"github.com/phaibin/pushgateway/storage"
 )
 
 type data struct {

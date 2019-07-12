@@ -24,7 +24,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"github.com/prometheus/pushgateway/storage"
+	"github.com/phaibin/pushgateway/storage"
 )
 
 // Delete returns a handler that accepts delete requests.

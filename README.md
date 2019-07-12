@@ -1,8 +1,8 @@
 # Prometheus Pushgateway
 
-[![Build Status](https://travis-ci.org/prometheus/pushgateway.svg)][travis]
-[![CircleCI](https://circleci.com/gh/prometheus/pushgateway/tree/master.svg?style=shield)][circleci]
-[![Docker Repository on Quay](https://quay.io/repository/prometheus/pushgateway/status)][quay]
+[![Build Status](https://travis-ci.org/phaibin/pushgateway.svg)][travis]
+[![CircleCI](https://circleci.com/gh/phaibin/pushgateway/tree/master.svg?style=shield)][circleci]
+[![Docker Repository on Quay](https://quay.io/repository/phaibin/pushgateway/status)][quay]
 [![Docker Pulls](https://img.shields.io/docker/pulls/prom/pushgateway.svg?maxAge=604800)][hub]
 
 The Prometheus Pushgateway exists to allow ephemeral and batch jobs to
@@ -30,7 +30,7 @@ source for
 something like release events has to happen with some event-logging framework.
 
 A while ago, we
-[decided to not implement a “timeout” or TTL for pushed metrics](https://github.com/prometheus/pushgateway/issues/19)
+[decided to not implement a “timeout” or TTL for pushed metrics](https://github.com/phaibin/pushgateway/issues/19)
 because almost all proposed use cases turned out to be anti-patterns we
 strongly discourage. You can follow a more recent discussion on the
 [prometheus-developers mailing list](https://groups.google.com/forum/#!topic/prometheus-developers/9IyUxRvhY7w).
@@ -38,7 +38,7 @@ strongly discourage. You can follow a more recent discussion on the
 ## Run it
 
 Download binary releases for your platform from the
-[release page](https://github.com/prometheus/pushgateway/releases) and unpack
+[release page](https://github.com/phaibin/pushgateway/releases) and unpack
 the tarball.
 
 If you want to compile yourself from the sources, you need a working Go
@@ -334,7 +334,7 @@ and the _Formatting and style_ section of Peter Bourgon's [Go:
 Best Practices for Production
 Environments](http://peter.bourgon.org/go-in-production/#formatting-and-style).
 
-[travis]: https://travis-ci.org/prometheus/pushgateway
+[travis]: https://travis-ci.org/phaibin/pushgateway
 [hub]: https://hub.docker.com/r/prom/pushgateway/
-[circleci]: https://circleci.com/gh/prometheus/pushgateway
-[quay]: https://quay.io/repository/prometheus/pushgateway
+[circleci]: https://circleci.com/gh/phaibin/pushgateway
+[quay]: https://quay.io/repository/phaibin/pushgateway
