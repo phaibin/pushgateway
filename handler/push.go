@@ -150,6 +150,7 @@ func sanitizeLabels(
 ) {
 	gLabelsNotYetDone := make(map[string]string, len(groupingLabels))
 
+	instance := ""
 	for _, mf := range metricFamilies {
 	metric:
 		for _, m := range mf.GetMetric() {
@@ -165,6 +166,7 @@ func sanitizeLabels(
 				}
 				if ln == string(model.InstanceLabel) {
 					hasInstanceLabel = true
+					instance = lp.GetValue()
 				}
 				if len(gLabelsNotYetDone) == 0 && hasInstanceLabel {
 					sort.Sort(labelPairs(m.Label))
@@ -178,13 +180,14 @@ func sanitizeLabels(
 				})
 				if ln == string(model.InstanceLabel) {
 					hasInstanceLabel = true
+					instance = lv
 				}
 				delete(gLabelsNotYetDone, ln) // To prepare map for next metric.
 			}
 			if !hasInstanceLabel {
 				m.Label = append(m.Label, &dto.LabelPair{
 					Name:  proto.String(string(model.InstanceLabel)),
-					Value: proto.String(""),
+					Value: proto.String(instance),
 				})
 			}
 			sort.Sort(labelPairs(m.Label))
