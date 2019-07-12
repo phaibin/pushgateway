@@ -38,9 +38,9 @@ import (
 	dto "github.com/prometheus/client_model/go"
 	promlogflag "github.com/prometheus/common/promlog/flag"
 
-	"github.com/prometheus/pushgateway/asset"
-	"github.com/prometheus/pushgateway/handler"
-	"github.com/prometheus/pushgateway/storage"
+	"github.com/phaibin/pushgateway/asset"
+	"github.com/phaibin/pushgateway/handler"
+	"github.com/phaibin/pushgateway/storage"
 )
 
 func init() {
