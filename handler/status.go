@@ -28,8 +28,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"gopkg.in/alecthomas/kingpin.v2"
 
-	"github.com/prometheus/common/version"
 	"github.com/phaibin/pushgateway/storage"
+	"github.com/prometheus/common/version"
 )
 
 type data struct {
